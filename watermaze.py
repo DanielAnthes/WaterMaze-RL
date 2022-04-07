@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-# import gif
-# from pygifsicle import optimize as optim_gif
+import gif
+from pygifsicle import optimize as optim_gif
 from matplotlib import cm
 
 np.seterr(over='raise') # raise errors for overflow warnings
@@ -400,7 +400,7 @@ plt.ylim([-1.5, 1.5])
 plt.title("trajectory")
 plt.show()
 
-'''
+
 #%% create gif of value function iteration
 @gif.frame
 def valuefunction_frame(landscape, xx, yy):
@@ -411,7 +411,7 @@ def valuefunction_frame(landscape, xx, yy):
 frames = list()
 for i in range(len(landscapes)):
     frames.append(valuefunction_frame(landscapes[i].flatten(), xx, yy))
-gif.save(frames, "valuefunction.gif", duration=100)
+gif.save(frames, "valuefunction.gif", duration=400)
 
 #%%
 
@@ -428,4 +428,4 @@ for i in range(30):
 plt.show()
 
 fig.savefig('valuesurface.png')
-'''
+

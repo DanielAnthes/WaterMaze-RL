@@ -6,10 +6,14 @@ An implementation of an actor critic reinforcement learning algorithm as describ
 
 ![training performance](Figure_1.png)
 
-## Example paths before and after training
+## Final value surface
 
 ![pre training](Figure_2.png)
-![post training](Figure_3.png)
+
+## Example paths before and after training
+
+![pre training](Figure_3.png)
+![post training](Figure_4.png)
 
 ## Development of value surface
 
